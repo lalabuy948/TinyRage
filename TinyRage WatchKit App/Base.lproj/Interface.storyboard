@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15505" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--MainMenu-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="MainMenu" title="MainMenu" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TinyRage_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Play" id="tP3-HL-vhE">
+                            <connections>
+                                <segue destination="m7L-V2-Y8j" kind="push" id="fnC-fJ-sKQ"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="31"/>
+        </scene>
+        <!--Game Controller-->
+        <scene sceneID="USv-AW-D2d">
+            <objects>
+                <controller fullScreen="YES" id="m7L-V2-Y8j" customClass="GameController" customModule="TinyRage_WatchKit_Extension">
+                    <items>
+                        <spriteKitScene alignment="left" scene="GameScene.sks" id="e5X-wo-sgp">
+                            <gestureRecognizers>
+                                <swipeGestureRecognizer id="X8N-xe-Nu2">
+                                    <connections>
+                                        <action selector="swipedRight:" destination="m7L-V2-Y8j" id="Bh7-WO-JfJ"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                            </gestureRecognizers>
+                        </spriteKitScene>
+                    </items>
+                    <connections>
+                        <outlet property="skInterface" destination="e5X-wo-sgp" id="mMc-HU-79Y"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="315" y="31"/>
+        </scene>
+    </scenes>
+</document>
