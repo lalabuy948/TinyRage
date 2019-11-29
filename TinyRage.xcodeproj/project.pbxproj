@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8CAF2A1C2378248400804A69 /* groundPictureLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CAF2A172378248300804A69 /* groundPictureLight.png */; };
-		8CAF2A1F2378248400804A69 /* groundPictureDark.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CAF2A1A2378248300804A69 /* groundPictureDark.png */; };
-		8CAF2A202378248400804A69 /* wallPictureLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CAF2A1B2378248400804A69 /* wallPictureLight.png */; };
-		8CAF2A22237824C500804A69 /* wallPictureDark.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CAF2A21237824C500804A69 /* wallPictureDark.png */; };
+		8C1AFC10237EA91900E3A186 /* groundPictureDark.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1AFC0B237EA91900E3A186 /* groundPictureDark.png */; };
+		8C1AFC11237EA91900E3A186 /* groundPictureLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1AFC0C237EA91900E3A186 /* groundPictureLight.png */; };
+		8C1AFC12237EA91900E3A186 /* wallPictureDark.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1AFC0D237EA91900E3A186 /* wallPictureDark.png */; };
+		8C1AFC13237EA91900E3A186 /* birdPicture.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1AFC0E237EA91900E3A186 /* birdPicture.png */; };
+		8C1AFC14237EA91900E3A186 /* wallPicture.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1AFC0F237EA91900E3A186 /* wallPicture.png */; };
+		8C6FD0CA237EDE8A0042D248 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C6FD0C9237EDE8A0042D248 /* Background.png */; };
 		8CF1EE6423777320000E0318 /* TinyRage WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8CF1EE6323777320000E0318 /* TinyRage WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8CF1EE6A23777320000E0318 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF1EE6823777320000E0318 /* Interface.storyboard */; };
 		8CF1EE6C23777320000E0318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF1EE6B23777320000E0318 /* Assets.xcassets */; };
@@ -20,7 +22,6 @@
 		8CF1EE7C23777321000E0318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF1EE7B23777321000E0318 /* Assets.xcassets */; };
 		8CF1EE8C237773D9000E0318 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF1EE8B237773D9000E0318 /* GameScene.swift */; };
 		8CF1EE8E23777437000E0318 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8CF1EE8D23777437000E0318 /* GameScene.sks */; };
-		8CF1EE91237774AD000E0318 /* birdPicture.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF1EE90237774AD000E0318 /* birdPicture.png */; };
 		8CF1EE93237774FA000E0318 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF1EE92237774FA000E0318 /* GameController.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,10 +68,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8CAF2A172378248300804A69 /* groundPictureLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = groundPictureLight.png; sourceTree = "<group>"; };
-		8CAF2A1A2378248300804A69 /* groundPictureDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = groundPictureDark.png; sourceTree = "<group>"; };
-		8CAF2A1B2378248400804A69 /* wallPictureLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wallPictureLight.png; path = ../../../../Downloads/assets/wallPictureLight.png; sourceTree = "<group>"; };
-		8CAF2A21237824C500804A69 /* wallPictureDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallPictureDark.png; sourceTree = "<group>"; };
+		8C1AFC0B237EA91900E3A186 /* groundPictureDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = groundPictureDark.png; sourceTree = "<group>"; };
+		8C1AFC0C237EA91900E3A186 /* groundPictureLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = groundPictureLight.png; sourceTree = "<group>"; };
+		8C1AFC0D237EA91900E3A186 /* wallPictureDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallPictureDark.png; sourceTree = "<group>"; };
+		8C1AFC0E237EA91900E3A186 /* birdPicture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = birdPicture.png; sourceTree = "<group>"; };
+		8C1AFC0F237EA91900E3A186 /* wallPicture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallPicture.png; sourceTree = "<group>"; };
+		8C6FD0C9237EDE8A0042D248 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		8CF1EE5F2377731F000E0318 /* TinyRage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyRage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF1EE6323777320000E0318 /* TinyRage WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TinyRage WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF1EE6923777320000E0318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -83,7 +86,6 @@
 		8CF1EE7D23777321000E0318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CF1EE8B237773D9000E0318 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		8CF1EE8D23777437000E0318 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		8CF1EE90237774AD000E0318 /* birdPicture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = birdPicture.png; sourceTree = "<group>"; };
 		8CF1EE92237774FA000E0318 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C1AFC0A237EA83800E3A186 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				8CF1EE8F237774AD000E0318 /* assets */,
+				8CF1EE8D23777437000E0318 /* GameScene.sks */,
+				8CF1EE8B237773D9000E0318 /* GameScene.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
 		8CF1EE582377731F000E0318 = {
 			isa = PBXGroup;
 			children = (
@@ -130,12 +142,10 @@
 		8CF1EE7623777320000E0318 /* TinyRage WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8C1AFC0A237EA83800E3A186 /* Game */,
 				8CF1EE9423777808000E0318 /* Controller */,
 				8CF1EE7923777320000E0318 /* ExtensionDelegate.swift */,
-				8CF1EE8D23777437000E0318 /* GameScene.sks */,
-				8CF1EE8F237774AD000E0318 /* assets */,
 				8CF1EE7B23777321000E0318 /* Assets.xcassets */,
-				8CF1EE8B237773D9000E0318 /* GameScene.swift */,
 				8CF1EE7D23777321000E0318 /* Info.plist */,
 			);
 			path = "TinyRage WatchKit Extension";
@@ -144,11 +154,12 @@
 		8CF1EE8F237774AD000E0318 /* assets */ = {
 			isa = PBXGroup;
 			children = (
-				8CAF2A1A2378248300804A69 /* groundPictureDark.png */,
-				8CAF2A172378248300804A69 /* groundPictureLight.png */,
-				8CAF2A1B2378248400804A69 /* wallPictureLight.png */,
-				8CAF2A21237824C500804A69 /* wallPictureDark.png */,
-				8CF1EE90237774AD000E0318 /* birdPicture.png */,
+				8C1AFC0E237EA91900E3A186 /* birdPicture.png */,
+				8C6FD0C9237EDE8A0042D248 /* Background.png */,
+				8C1AFC0B237EA91900E3A186 /* groundPictureDark.png */,
+				8C1AFC0C237EA91900E3A186 /* groundPictureLight.png */,
+				8C1AFC0F237EA91900E3A186 /* wallPicture.png */,
+				8C1AFC0D237EA91900E3A186 /* wallPictureDark.png */,
 			);
 			path = assets;
 			sourceTree = "<group>";
@@ -278,13 +289,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1AFC14237EA91900E3A186 /* wallPicture.png in Resources */,
+				8C6FD0CA237EDE8A0042D248 /* Background.png in Resources */,
+				8C1AFC12237EA91900E3A186 /* wallPictureDark.png in Resources */,
+				8C1AFC11237EA91900E3A186 /* groundPictureLight.png in Resources */,
 				8CF1EE8E23777437000E0318 /* GameScene.sks in Resources */,
 				8CF1EE7C23777321000E0318 /* Assets.xcassets in Resources */,
-				8CF1EE91237774AD000E0318 /* birdPicture.png in Resources */,
-				8CAF2A202378248400804A69 /* wallPictureLight.png in Resources */,
-				8CAF2A1C2378248400804A69 /* groundPictureLight.png in Resources */,
-				8CAF2A1F2378248400804A69 /* groundPictureDark.png in Resources */,
-				8CAF2A22237824C500804A69 /* wallPictureDark.png in Resources */,
+				8C1AFC10237EA91900E3A186 /* groundPictureDark.png in Resources */,
+				8C1AFC13237EA91900E3A186 /* birdPicture.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PPKSE537F6;
 				INFOPLIST_FILE = "TinyRage WatchKit Extension/Info.plist";
@@ -455,6 +468,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = si.popov.daniil.TinyRage.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -467,6 +481,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PPKSE537F6;
 				INFOPLIST_FILE = "TinyRage WatchKit Extension/Info.plist";
@@ -477,6 +492,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = si.popov.daniil.TinyRage.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -490,12 +506,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PPKSE537F6;
 				IBSC_MODULE = TinyRage_WatchKit_Extension;
 				INFOPLIST_FILE = "TinyRage WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = si.popov.daniil.TinyRage.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -509,12 +527,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PPKSE537F6;
 				IBSC_MODULE = TinyRage_WatchKit_Extension;
 				INFOPLIST_FILE = "TinyRage WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = si.popov.daniil.TinyRage.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -526,26 +546,32 @@
 		8CF1EE8923777321000E0318 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PPKSE537F6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = si.popov.daniil.TinyRage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Debug;
 		};
 		8CF1EE8A23777321000E0318 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PPKSE537F6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = si.popov.daniil.TinyRage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Release;
 		};
@@ -559,7 +585,7 @@
 				8CF1EE7F23777321000E0318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		8CF1EE8023777321000E0318 /* Build configuration list for PBXNativeTarget "TinyRage WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -568,7 +594,7 @@
 				8CF1EE8223777321000E0318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		8CF1EE8423777321000E0318 /* Build configuration list for PBXNativeTarget "TinyRage WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -577,7 +603,7 @@
 				8CF1EE8623777321000E0318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		8CF1EE8823777321000E0318 /* Build configuration list for PBXNativeTarget "TinyRage" */ = {
 			isa = XCConfigurationList;
@@ -586,7 +612,7 @@
 				8CF1EE8A23777321000E0318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

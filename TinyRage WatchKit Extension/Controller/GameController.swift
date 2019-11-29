@@ -38,6 +38,7 @@ class GameController: WKInterfaceController, WKCrownDelegate {
             
             // Use a value that will maintain a consistent frame rate
             self.skInterface.preferredFramesPerSecond = 60
+
         }
     }
     
@@ -53,17 +54,15 @@ class GameController: WKInterfaceController, WKCrownDelegate {
     
     func crownDidRotate(_ crownSequencer: WKCrownSequencer?, rotationalDelta: Double) {
             
-            // convert crown rotation to CGFloat
-            let step   = NSNumber.init(value: rotationalDelta * crownSensivity).floatValue
-            let cgStep = CGFloat(step)
-
-            // log whats happened
-            // print("Crown: \(cgStep)")
+        // convert crown rotation to CGFloat
+        let step   = NSNumber.init(value: rotationalDelta * crownSensivity).floatValue
+        let cgStep = CGFloat(step)
 
         if (cgStep < -0.5 || cgStep > 0.5) {
-                gameScene.applyBirdImpulse()
-            }
+            // WKInterfaceDevice.current().play(.notification)
+            gameScene.applyBirdImpulse()
         }
+    }
     
     @IBAction func swipedRight(_ sender: Any) {
         WKInterfaceController.reloadRootPageControllers(
