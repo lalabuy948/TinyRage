@@ -56,7 +56,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let removePipes    = SKAction.removeFromParent();
         
         pipesMoveAndThenRemove = SKAction.sequence([movePipes, removePipes]);
-        
+
         let spawn = SKAction.run(self.spawnPipes);
         let delay = SKAction.wait(forDuration: 2.0);
         let spawnThenDelay         = SKAction.sequence([spawn, delay]);
@@ -181,7 +181,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         pipePair.run(pipesMoveAndThenRemove);
         
         self.addChild(pipePair);
-
+        
+        self.score += 1;
+    }
+    
+    @objc func incrementScore() -> Void {
+        self.score += 1;
     }
     
     // MARK: applyBirdImpulse
@@ -198,7 +203,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     // MARK: collisions
-    func didBegin(_ contact: SKPhysicsContact) {
+    func didBegin(_ contact: SKPhysicsContact) -> Void {
         var firstBody:SKPhysicsBody;
         var secondBody:SKPhysicsBody;
         
