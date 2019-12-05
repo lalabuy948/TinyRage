@@ -14,14 +14,15 @@ class InterfaceController: WKInterfaceController {
     
     var highestScorekey: String = "TinyRageHighestScore";
     
-    @IBOutlet weak var highestScoreButton: WKInterfaceTextField!
+    @IBOutlet weak var highestScoreLabel: WKInterfaceLabel!
     
     override func awake(withContext context: Any?) {
-        super.awake(withContext: context)
+        super.awake(withContext: context);
         
-        let defaults = UserDefaults.standard
-        let highestScore = defaults.integer(forKey: self.highestScorekey)
-        highestScoreButton.setText("Highest score: \(highestScore)")
+        let defaults = UserDefaults.standard;
+        let highestScore = defaults.integer(forKey: self.highestScorekey);
+        
+        highestScoreLabel.setText("Highest score: \(highestScore)");
     }
     
     override func willActivate() {

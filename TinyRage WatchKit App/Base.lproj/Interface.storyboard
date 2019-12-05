@@ -14,12 +14,12 @@
                         <label width="1" height="55" alignment="left" text="TinyRage" textAlignment="center" id="3LE-Am-4Q6">
                             <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
                         </label>
+                        <label height="35" alignment="left" text="Highest score: 0" id="nAI-4z-fos"/>
                         <button width="1" alignment="left" verticalAlignment="center" title="Play 🐦" id="tP3-HL-vhE">
                             <connections>
                                 <segue destination="m7L-V2-Y8j" kind="push" id="fnC-fJ-sKQ"/>
                             </connections>
                         </button>
-                        <textField width="1" alignment="left" verticalAlignment="center" isAccessibilityElement="NO" text="Highest score:" id="K0P-OT-P9b"/>
                         <button width="1" alignment="left" verticalAlignment="center" hidden="YES" isAccessibilityElement="NO" title="Credentials" id="1wn-Ge-PJ3"/>
                     </items>
                     <variation key="default">
@@ -28,7 +28,7 @@
                         </mask>
                     </variation>
                     <connections>
-                        <outlet property="highestScoreButton" destination="K0P-OT-P9b" id="xhs-Hk-NOT"/>
+                        <outlet property="highestScoreLabel" destination="nAI-4z-fos" id="tp5-vh-0ed"/>
                     </connections>
                 </controller>
             </objects>
