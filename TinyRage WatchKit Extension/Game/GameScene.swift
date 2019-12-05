@@ -10,15 +10,16 @@ import SpriteKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
-    var bird                   = SKSpriteNode();
-    var pipeUpTexture          = SKTexture();
-    var pipeDownTexture        = SKTexture();
-    var pipesMoveAndThenRemove = SKAction();
-    var spawnThenDelayForever  = SKAction();
-    
+    var highestScorekey: String = "TinyRageHighestScore";
+    var bird                    = SKSpriteNode();
+    var pipeUpTexture           = SKTexture();
+    var pipeDownTexture         = SKTexture();
+    var pipesMoveAndThenRemove  = SKAction();
+    var spawnThenDelayForever   = SKAction();
+
     let birdCategory: UInt32   = 0x1 << 1;
     let wallCategory: UInt32   = 0x1 << 1;
-    
+
     var gameOverLabel:SKLabelNode!
     // score
     var scoreLabel:SKLabelNode!
@@ -223,6 +224,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func restartGame() {
         self.removeAllActions();
         self.gameOverLabel.isHidden = false;
+        self.updateHighestScore(score: self.score);
         
         for node in self.children {
             if node.name != "background" && node.name != "gameOverLabel" {
@@ -230,9 +232,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             }
         }
         
-        _ = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(sceneDidLoad), userInfo: nil, repeats: false)
+        _ = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(sceneDidLoad), userInfo: nil, repeats: false);
         
         self.bird.removeFromParent();
+    }
+    
+    func updateHighestScore(score: Int) -> Void {
+        
+        let defaults = UserDefaults.standard
+        
+        let highestScore = defaults.integer(forKey: self.highestScorekey)
+        if (highestScore < score) {
+            defaults.set(score, forKey: self.highestScorekey)
+        }
     }
     
     override func update(_ currentTime: TimeInterval) -> Void {

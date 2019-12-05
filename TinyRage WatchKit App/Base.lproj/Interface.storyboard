@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15505" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch44"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
     </dependencies>
     <scenes>
@@ -11,15 +11,28 @@
             <objects>
                 <controller identifier="MainMenu" title="MainMenu" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TinyRage_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" verticalAlignment="center" title="Play" id="tP3-HL-vhE">
+                        <label width="1" height="55" alignment="left" text="TinyRage" textAlignment="center" id="3LE-Am-4Q6">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                        </label>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Play 🐦" id="tP3-HL-vhE">
                             <connections>
                                 <segue destination="m7L-V2-Y8j" kind="push" id="fnC-fJ-sKQ"/>
                             </connections>
                         </button>
+                        <textField width="1" alignment="left" verticalAlignment="center" isAccessibilityElement="NO" text="Highest score:" id="K0P-OT-P9b"/>
+                        <button width="1" alignment="left" verticalAlignment="center" hidden="YES" isAccessibilityElement="NO" title="Credentials" id="1wn-Ge-PJ3"/>
                     </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="1wn-Ge-PJ3"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="highestScoreButton" destination="K0P-OT-P9b" id="xhs-Hk-NOT"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="34" y="31"/>
+            <point key="canvasLocation" x="34" y="30.357142857142858"/>
         </scene>
         <!--Game Controller-->
         <scene sceneID="USv-AW-D2d">
