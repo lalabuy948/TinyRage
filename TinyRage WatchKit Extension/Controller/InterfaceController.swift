@@ -12,14 +12,20 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
     
+    var highestScorekey: String = "TinyRageHighestScore";
+    
+    @IBOutlet weak var highestScoreLabel: WKInterfaceLabel!
+    
     override func awake(withContext context: Any?) {
-        super.awake(withContext: context)
-        
-        // Configure interface objects here.
+        super.awake(withContext: context);
     }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
+        let defaults = UserDefaults.standard;
+        let highestScore = defaults.integer(forKey: self.highestScorekey);
+        
+        highestScoreLabel.setText("Highest score: \(highestScore)");
         super.willActivate()
     }
     

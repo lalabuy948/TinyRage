@@ -59,7 +59,7 @@ class GameController: WKInterfaceController, WKCrownDelegate {
         let cgStep = CGFloat(step)
 
         if (cgStep < -0.5 || cgStep > 0.5) {
-            // WKInterfaceDevice.current().play(.notification)
+            WKInterfaceDevice.current().play(.click)
             gameScene.applyBirdImpulse()
         }
     }
