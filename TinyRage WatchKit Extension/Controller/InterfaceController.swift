@@ -18,15 +18,14 @@ class InterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context);
-        
-        let defaults = UserDefaults.standard;
-        let highestScore = defaults.integer(forKey: self.highestScorekey);
-        
-        highestScoreLabel.setText("Highest score: \(highestScore)");
     }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
+        let defaults = UserDefaults.standard;
+        let highestScore = defaults.integer(forKey: self.highestScorekey);
+        
+        highestScoreLabel.setText("Highest score: \(highestScore)");
         super.willActivate()
     }
     

@@ -28,7 +28,7 @@
                         </mask>
                     </variation>
                     <connections>
-                        <outlet property="highestScoreLabel" destination="nAI-4z-fos" id="tp5-vh-0ed"/>
+                        <outlet property="highestScoreLabel" destination="nAI-4z-fos" id="LPm-et-VEN"/>
                     </connections>
                 </controller>
             </objects>
