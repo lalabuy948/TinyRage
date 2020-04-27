@@ -1,6 +1,6 @@
 <br>
 
-<h1 align="center">TinyRage </h1>
+<h1 align="center">TinyRage 🐧</h1>
 
 <p align="center">
   <a href="https://developer.apple.com/swift/"><img src="https://badgen.net/badge/Swift/5.2/orange"/></a>
