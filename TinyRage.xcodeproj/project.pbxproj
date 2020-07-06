@@ -467,7 +467,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = si.popov.daniil.TinyRageApp.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = si.popov.daniil.TinyRage.watchkitapp.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -492,7 +492,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = si.popov.daniil.TinyRageApp.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = si.popov.daniil.TinyRage.watchkitapp.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -514,7 +514,7 @@
 				IBSC_MODULE = TinyRage_WatchKit_Extension;
 				INFOPLIST_FILE = "TinyRage WatchKit App/Info.plist";
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = si.popov.daniil.TinyRageApp.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = si.popov.daniil.TinyRage.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -536,7 +536,7 @@
 				IBSC_MODULE = TinyRage_WatchKit_Extension;
 				INFOPLIST_FILE = "TinyRage WatchKit App/Info.plist";
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = si.popov.daniil.TinyRageApp.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = si.popov.daniil.TinyRage.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -555,7 +555,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PPKSE537F6;
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = si.popov.daniil.TinyRageApp;
+				PRODUCT_BUNDLE_IDENTIFIER = si.popov.daniil.TinyRage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -571,7 +571,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PPKSE537F6;
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = si.popov.daniil.TinyRageApp;
+				PRODUCT_BUNDLE_IDENTIFIER = si.popov.daniil.TinyRage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
