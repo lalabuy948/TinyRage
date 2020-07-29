@@ -12,6 +12,11 @@
   FlappyBird clone written in <code>swift 5</code> using <code>spriteKit</code> for watchOS 6 as standalone game. 
 </p>
 
-## Gameplay
+<hr>
+<br>
 
-![gameplay](Static/1.0/gameplay-1.0.gif)
+<p align="center">
+  <a target="_blank" rel="noopener noreferrer" href="/lalabuy948/TinyRage/blob/develop/Static/1.0/gameplay-1.0.gif">
+    <img src="/lalabuy948/TinyRage/raw/develop/Static/1.0/gameplay-1.0.gif" alt="gameplay" style="max-width:100%;">
+  </a>
+</p>
