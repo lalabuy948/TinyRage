@@ -36,21 +36,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.gameOverLabel?.removeFromParent();
         
         self.initGameOverPopup()
-        
         // Init score
         self.initScore()
-        
         // Init bird
         self.initBird();
-        
         // Init ground
         self.initGround();
         
-        // Pipes textures
+        // Preload pipes textures
         pipeUpTexture   = SKTexture(imageNamed: "wallPictureDark");
         pipeDownTexture = SKTexture(imageNamed: "wallPictureDark");
         
-        let distanceToMove = CGFloat(self.frame.size.width + 2 * pipeUpTexture.size().width);
+        let distanceToMove = CGFloat(self.frame.size.width + (2 * pipeUpTexture.size().width));
         let movePipes      = SKAction.moveBy(x: -distanceToMove,
                                              y: 0.0,
                                              duration: TimeInterval(0.01 * distanceToMove));
@@ -71,6 +68,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.physicsWorld.gravity         = CGVector(dx: 0.0, dy: -5.5);
         self.physicsWorld.contactDelegate = self
         bird.physicsBody?.isDynamic       = true;
+        
+        if self.scene?.isPaused == false {
+            self.scene?.isPaused = true;
+        };
 
         // Start spawing pipes
         self.run(spawnThenDelayForever);
@@ -98,6 +99,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     // MARK: initBird
+    
     func initBird() -> Void {
         // Bird texture
         let birdTexture = SKTexture(imageNamed: "birdPicture");
@@ -123,6 +125,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     // MARK: initGround
+    
     func initGround() -> Void {
         // Ground texture
         let groundTexture = SKTexture(imageNamed: "groundPictureLight");
@@ -140,6 +143,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     // MARK: spawnPipes
+    
     func spawnPipes() -> Void {
         
         let pipesGap: CGFloat  = 1.0;
@@ -186,11 +190,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.score += 1;
     }
     
-    @objc func incrementScore() -> Void {
-        self.score += 1;
-    }
-    
     // MARK: applyBirdImpulse
+    
     func applyBirdImpulse() -> Void {
         
         if self.scene?.isPaused == true {
@@ -204,6 +205,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     // MARK: collisions
+    
     func didBegin(_ contact: SKPhysicsContact) -> Void {
         var firstBody:SKPhysicsBody;
         var secondBody:SKPhysicsBody;
@@ -221,6 +223,22 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
+    // MAR: utility
+    
+    @objc func incrementScore() -> Void {
+        self.score += 1;
+    }
+    
+    func updateHighestScore(score: Int) -> Void {
+        
+        let defaults = UserDefaults.standard
+        
+        let highestScore = defaults.integer(forKey: self.highestScorekey)
+        if (highestScore < score) {
+            defaults.set(score, forKey: self.highestScorekey)
+        }
+    }
+    
     func restartGame() {
         self.removeAllActions();
         self.gameOverLabel.isHidden = false;
@@ -235,16 +253,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         _ = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(sceneDidLoad), userInfo: nil, repeats: false);
         
         self.bird.removeFromParent();
-    }
-    
-    func updateHighestScore(score: Int) -> Void {
-        
-        let defaults = UserDefaults.standard
-        
-        let highestScore = defaults.integer(forKey: self.highestScorekey)
-        if (highestScore < score) {
-            defaults.set(score, forKey: self.highestScorekey)
-        }
     }
     
     override func update(_ currentTime: TimeInterval) -> Void {
