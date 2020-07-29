@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  FlappyBird clone written in `swift 5` using `spriteKit` for watchOS 6 as standalone game. 
+  FlappyBird clone written in <code>swift 5</code> using <code>spriteKit<code> for watchOS 6 as standalone game. 
 </p>
 
 ## Gameplay
