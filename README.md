@@ -16,7 +16,7 @@
 <br>
 
 <p align="center">
-  <a target="_blank" rel="noopener noreferrer" href="/lalabuy948/TinyRage/blob/develop/Static/1.0/gameplay-1.0.gif">
-    <img src="/lalabuy948/TinyRage/raw/develop/Static/1.0/gameplay-1.0.gif" alt="gameplay" style="max-width:100%;">
+  <a target="_blank" rel="noopener noreferrer" href="/github/1.0/gameplay-1.0.gif">
+    <img src="/github/1.0/gameplay-1.0.gif" alt="gameplay" style="max-width:100%;">
   </a>
 </p>
